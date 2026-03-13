@@ -9,11 +9,6 @@ internal class FloorPatches
     [HarmonyPostfix]
     internal static void StructureFloorValidityPatch(PlaceableStructure __instance, int floor, ref bool __result)
     {
-        if (floor == 0)
-        {
-            __result = true;
-            return;
-        }
         if (
             floor < 0
             && AirportCEOUndergroundStructuresConfig.undergroundableStructureTypes.Contains(__instance.structureType)
