@@ -37,7 +37,7 @@ public class AirportCEOUndergroundStructures : BaseUnityPlugin
     private void Start()
     {
         AirportCEOModLoader.WatermarkUtils.WatermarkUtils.Register(
-            new AirportCEOModLoader.WatermarkUtils.WatermarkInfo("US", "0.1.0", true)
+            new AirportCEOModLoader.WatermarkUtils.WatermarkInfo("US", PluginInfo.PLUGIN_VERSION, true)
         );
     }
 }
